@@ -323,3 +323,13 @@ header.masthead {
   padding: 15px 30px; }
 
 /*# sourceMappingURL=creative.css.map */
+
+/*new classess*/
+
+.text-faded a {
+  color: #fff;
+}
+
+.text-faded a:hover {
+  color: #d4d4d4;
+}
