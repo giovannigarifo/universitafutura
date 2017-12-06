@@ -333,3 +333,11 @@ header.masthead {
 .text-faded a:hover {
   color: #d4d4d4;
 }
+
+
+/*privacy policy classes*/
+
+.pp-paragraph {
+
+  text-align: justify;
+}

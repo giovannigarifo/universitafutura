@@ -7,7 +7,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18637556-9"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-18637556-9');
@@ -51,6 +51,41 @@
 
   <!-- Custom styles for this template CHANGE TO CSS ONCE FINISHED -->
   <link href="css/creative.css" rel="stylesheet">
+
+  <!-- cookie banner -->
+  <link rel="stylesheet" type="text/css" href="css/cookieconsent.min.css" />
+  <script src="js/cookieconsent.min.js"></script>
+  <script>
+
+    window.addEventListener("load", function () {
+
+      setTimeout(function () {
+
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#151613"
+            },
+            "button": {
+              "background": "transparent",
+              "border": "#cb5062",
+              "text": "#cb5062"
+            }
+          },
+          "position": "bottom-right",
+          "content": {
+            "message": "Questo sito web utilizza i cookies per ottenere statistiche sulle visite ed i download.",
+            "dismiss": "Ok",
+            "link": "Leggi la privacy policy",
+            "href": "privacy-policy.html"
+          }
+        })
+
+      }, 500);
+
+
+    });
+  </script>
 
 </head>
 
