@@ -3,16 +3,21 @@
 
 <head>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18637556-9"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-18637556-9');
+    <!-- Matomo -->
+    <script type="text/javascript">
+        var _paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="https://analytics.nexacenter.org/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', '7']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
     </script>
-
+    <!-- End Matomo Code -->
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -135,33 +140,38 @@
                             <br> Quasi tutti i browser sono impostati per accettare i cookie, tuttavia l'utente/visitatore può
                             autonomamente modificare la configurazione del proprio browser e bloccare i cookie (vedi punto
                             1.1.4 "Come disabilitare i cookie (opt-out)").</p>
+
                         <h4>1.1.1 Cookie di terze parti</h4>
-                        <p class="pp-paragraph">Questo sito utilizza cookie delle seguenti terze parti:
+                        <p class="pp-paragraph">Questo sito NON utilizza cookie di terze parti.
+                        </p>
+
+                        <h4>1.1.2 Cookie di analisi</h4>
+                        <p class="pp-paragraph">Questo sito utilizza i seguenti cookie di analisi:
                         </p>
                         <table class="table table-striped table-sm" style="text-align: left;">
                             <tbody>
                                 <tr>
-                                    <th>Terza parte</th>
+                                    <th>Cookie</th>
                                     <th>Servizio</th>
                                     <th>Descrizione</th>
                                 </tr>
                                 <tr>
                                     <td rowspan="3">
-                                        <strong>Google</strong>
-                                        <br>
-                                        <a href="https://www.google.com/policies/privacy/">Informativa sulla privacy</a>
+                                        <strong>Matomo</strong>
                                     </td>
                                     <td>Analytics</td>
                                     <td>Servizio di analisi dei dati di navigazione con il fine di ricavare informazioni statistiche
-                                        anonime sull'uso del sito. Utilizzato in tutte le pagine del sito.
-                                        <br>Per maggiori informazioni, si veda
-                                        <a href="https://support.google.com/analytics/topic/2919631">l'informativa di Google Analytics</a>
+                                        anonime sull'uso del sito. Utilizzato in tutte le pagine del sito. I dati raccolti sono anonimizzati.
+                                        Non ci affidiamo a soggetti terzi per la raccolta, la memorizzazione e l'analisi di questi dati, ma
+                                        utilizziamo software open-source (https://matomo.org/) installato su macchine di cui abbiamo il controllo diretto.
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                         La disattivazione di questi cookie non comporta nessuna conseguenza sulla navigazione del sito.
                         <p></p>
+
+
                         <h4>1.1.2 Siti web e servizi esterni</h4>
                         <p class="pp-paragraph">Il sito potrebbe contenere collegamenti ad altri siti web esterni che dispongono di una propria informativa
                             sulla privacy. Non rispondiamo del trattamento dei dati svolto da tali siti.
@@ -211,7 +221,7 @@
                 <a href="https://startbootstrap.com/">Start Bootstrap</a>, cookie banner by
                 <a href="https://github.com/insites/cookieconsent">Insites</a>. Powered by
                 <a href="https://getbootstrap.com/">
-                    <img style="width: 40px;" class="credits-logo" src="http://getbootstrap.com/assets/img/bootstrap-stack.png" />
+                    Bootstrap.
                 </a>
             </p>
         </div>
