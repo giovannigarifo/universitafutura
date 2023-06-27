@@ -3,3 +3,4 @@ gulpfile.js
 package.json
 README.md
 img/header.xcf
+.DS_Store
